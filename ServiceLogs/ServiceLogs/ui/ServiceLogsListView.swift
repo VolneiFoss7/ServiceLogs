@@ -18,10 +18,10 @@ struct ServiceLogsListView: View {
                         .font(.system(size: 32))
                         .foregroundColor(Color(hex: "#383838"))
                     
-                        Rectangle()
-                            .fill(Color(hex: "#7EBC0A"))
-                            .frame(width: 72, height: 4)
-                            .padding(.leading)
+                    Rectangle()
+                        .fill(Color(hex: "#7EBC0A"))
+                        .frame(width: 72, height: 4)
+                        .padding(.leading)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding([.bottom, .top], 16)
@@ -30,7 +30,7 @@ struct ServiceLogsListView: View {
                 ScrollView {
                     LazyVStack(spacing: 0) {
                         ForEach(viewModel.serviceLogs.indices, id: \.self) { index in
-                            ServiceLogsItemView(serviceLog: viewModel.serviceLogs[index])
+                            ServiceLogsItemView(serviceLog: viewModel.serviceLogs[index], viewModel: viewModel) 
                                 .onAppear {
                                     if index == viewModel.serviceLogs.count - 1 && viewModel.hasMoreLogs {
                                         viewModel.loadMoreLogs()
@@ -48,4 +48,3 @@ struct ServiceLogsListView: View {
 #Preview {
     ServiceLogsListView()
 }
-
