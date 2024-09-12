@@ -92,6 +92,7 @@
 		4FD325C12C933575006385EF /* ServiceLogs */ = {
 			isa = PBXGroup;
 			children = (
+				4FD325EC2C93395F006385EF /* ui */,
 				4FD325C22C933575006385EF /* ServiceLogsApp.swift */,
 				4FD325C62C933577006385EF /* Assets.xcassets */,
 				4FD325C82C933577006385EF /* Preview Content */,
@@ -122,6 +123,13 @@
 				4FD325DF2C933577006385EF /* ServiceLogsUITestsLaunchTests.swift */,
 			);
 			path = ServiceLogsUITests;
+			sourceTree = "<group>";
+		};
+		4FD325EC2C93395F006385EF /* ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
