@@ -18,6 +18,7 @@
 		4FD325F52C933C6B006385EF /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F42C933C6B006385EF /* HexColor.swift */; };
 		4FD325F72C933D1F006385EF /* HeaderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F62C933D1F006385EF /* HeaderItemView.swift */; };
 		4FD325FA2C933F28006385EF /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F92C933F28006385EF /* TagView.swift */; };
+		4FD325FC2C9342A2006385EF /* BodyItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325FB2C9342A2006385EF /* BodyItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4FD325F42C933C6B006385EF /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		4FD325F62C933D1F006385EF /* HeaderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderItemView.swift; sourceTree = "<group>"; };
 		4FD325F92C933F28006385EF /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		4FD325FB2C9342A2006385EF /* BodyItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */,
 				4FD325F62C933D1F006385EF /* HeaderItemView.swift */,
+				4FD325FB2C9342A2006385EF /* BodyItemView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				4FD325F22C933A99006385EF /* ServiceLogsItemView.swift in Sources */,
 				4FD325F72C933D1F006385EF /* HeaderItemView.swift in Sources */,
 				4FD325F52C933C6B006385EF /* HexColor.swift in Sources */,
+				4FD325FC2C9342A2006385EF /* BodyItemView.swift in Sources */,
 				4FD325C32C933575006385EF /* ServiceLogsApp.swift in Sources */,
 				4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */,
 				4FD325FA2C933F28006385EF /* TagView.swift in Sources */,
