@@ -15,6 +15,7 @@
 		4FD325E02C933577006385EF /* ServiceLogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325DF2C933577006385EF /* ServiceLogsUITestsLaunchTests.swift */; };
 		4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */; };
 		4FD325F22C933A99006385EF /* ServiceLogsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */; };
+		4FD325F52C933C6B006385EF /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F42C933C6B006385EF /* HexColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4FD325DF2C933577006385EF /* ServiceLogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsListView.swift; sourceTree = "<group>"; };
 		4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsItemView.swift; sourceTree = "<group>"; };
+		4FD325F42C933C6B006385EF /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		4FD325C12C933575006385EF /* ServiceLogs */ = {
 			isa = PBXGroup;
 			children = (
+				4FD325F32C933C5F006385EF /* utils */,
 				4FD325EC2C93395F006385EF /* ui */,
 				4FD325C22C933575006385EF /* ServiceLogsApp.swift */,
 				4FD325C62C933577006385EF /* Assets.xcassets */,
@@ -152,6 +155,14 @@
 				4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		4FD325F32C933C5F006385EF /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4FD325F42C933C6B006385EF /* HexColor.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD325F22C933A99006385EF /* ServiceLogsItemView.swift in Sources */,
+				4FD325F52C933C6B006385EF /* HexColor.swift in Sources */,
 				4FD325C32C933575006385EF /* ServiceLogsApp.swift in Sources */,
 				4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */,
 			);
