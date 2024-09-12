@@ -14,6 +14,7 @@
 		4FD325DE2C933577006385EF /* ServiceLogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325DD2C933577006385EF /* ServiceLogsUITests.swift */; };
 		4FD325E02C933577006385EF /* ServiceLogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325DF2C933577006385EF /* ServiceLogsUITestsLaunchTests.swift */; };
 		4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */; };
+		4FD325F22C933A99006385EF /* ServiceLogsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4FD325DD2C933577006385EF /* ServiceLogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsUITests.swift; sourceTree = "<group>"; };
 		4FD325DF2C933577006385EF /* ServiceLogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsListView.swift; sourceTree = "<group>"; };
+		4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +140,18 @@
 		4FD325ED2C933995006385EF /* list */ = {
 			isa = PBXGroup;
 			children = (
+				4FD325F02C933A7A006385EF /* components */,
 				4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */,
 			);
 			path = list;
+			sourceTree = "<group>";
+		};
+		4FD325F02C933A7A006385EF /* components */ = {
+			isa = PBXGroup;
+			children = (
+				4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD325F22C933A99006385EF /* ServiceLogsItemView.swift in Sources */,
 				4FD325C32C933575006385EF /* ServiceLogsApp.swift in Sources */,
 				4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */,
 			);
