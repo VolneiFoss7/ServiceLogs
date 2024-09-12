@@ -21,7 +21,29 @@ struct HeaderItemView: View {
             
             Spacer()
             
-            
+            Menu {
+                Button(action: {
+                   
+                }) {
+                    Label("Pin", systemImage: "pin")
+                }
+                
+                Button(action: {
+                    
+                }) {
+                    Label("Edit", systemImage: "pencil")
+                }
+                
+                Button(action: {
+                    
+                }) {
+                    Label("Delete", systemImage: "trash")
+                }
+            } label: {
+                Image(systemName: "ellipsis")
+                    .padding(.trailing, 16)
+                    .foregroundColor(Color(hex: "#7EBC0A"))
+            }
         }
         .frame(maxWidth: .infinity)
     }
