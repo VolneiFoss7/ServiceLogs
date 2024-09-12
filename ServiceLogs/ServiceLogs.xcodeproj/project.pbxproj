@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4FD325C32C933575006385EF /* ServiceLogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325C22C933575006385EF /* ServiceLogsApp.swift */; };
-		4FD325C52C933575006385EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325C42C933575006385EF /* ContentView.swift */; };
 		4FD325C72C933577006385EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD325C62C933577006385EF /* Assets.xcassets */; };
 		4FD325CA2C933577006385EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD325C92C933577006385EF /* Preview Assets.xcassets */; };
 		4FD325D42C933577006385EF /* ServiceLogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325D32C933577006385EF /* ServiceLogsTests.swift */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		4FD325BF2C933575006385EF /* ServiceLogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceLogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD325C22C933575006385EF /* ServiceLogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsApp.swift; sourceTree = "<group>"; };
-		4FD325C42C933575006385EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FD325C62C933577006385EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FD325C92C933577006385EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4FD325CF2C933577006385EF /* ServiceLogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceLogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				4FD325C22C933575006385EF /* ServiceLogsApp.swift */,
-				4FD325C42C933575006385EF /* ContentView.swift */,
 				4FD325C62C933577006385EF /* Assets.xcassets */,
 				4FD325C82C933577006385EF /* Preview Content */,
 			);
@@ -257,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FD325C52C933575006385EF /* ContentView.swift in Sources */,
 				4FD325C32C933575006385EF /* ServiceLogsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
