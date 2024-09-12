@@ -7,12 +7,17 @@
 
 import SwiftUI
 
-struct ServiceLog: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct ServiceLog {
+    let userName: String
+    let userImage: ImageResource
+    let residentName: String
+    let categoryTitle: String
+    let reportText: String
+    let time: Date
+    
+    var timeString: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm a"
+        return dateFormatter.string(from: time)
     }
-}
-
-#Preview {
-    ServiceLog()
 }
