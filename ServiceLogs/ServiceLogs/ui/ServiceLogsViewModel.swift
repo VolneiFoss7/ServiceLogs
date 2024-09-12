@@ -6,14 +6,16 @@
 //
 
 import Foundation
+import UIKit
+import Combine
 
 class ServiceLogsViewModel: ObservableObject {
     @Published var serviceLogs: [ServiceLog] = []
     @Published var currentPage = 1
     private let itemsPerPage = 10
+    private let allLogs = mockServiceLogs
     
-    
-    let allLogs = mockServiceLogs
+    @Published var downloadedImage: UIImage?
     
     init() {
         loadMoreLogs()
@@ -26,6 +28,46 @@ class ServiceLogsViewModel: ObservableObject {
             let newLogs = Array(allLogs[startIndex..<endIndex])
             serviceLogs.append(contentsOf: newLogs)
             currentPage += 1
+        }
+    }
+    
+    func downloadImage(from urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print("Erro ao baixar a imagem: \(error)")
+                return
+            }
+            
+            guard let data = data, let downloadedImage = UIImage(data: data) else {
+                print("Erro ao converter dados em imagem")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.downloadedImage = downloadedImage
+                self.saveImageLocally(image: downloadedImage) 
+            }
+        }
+        task.resume()
+    }
+    
+    func saveImageLocally(image: UIImage) {
+        guard let data = image.jpegData(compressionQuality: 1) else { return }
+        
+        let fileManager = FileManager.default
+        let urls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
+        
+        if let documentDirectory = urls.first {
+            let fileURL = documentDirectory.appendingPathComponent("imagem_baixada.jpg")
+            
+            do {
+                try data.write(to: fileURL)
+                print("Imagem salva em: \(fileURL.path)")
+            } catch {
+                print("Erro ao salvar a imagem: \(error)")
+            }
         }
     }
     
