@@ -16,6 +16,7 @@
 		4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */; };
 		4FD325F22C933A99006385EF /* ServiceLogsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */; };
 		4FD325F52C933C6B006385EF /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F42C933C6B006385EF /* HexColor.swift */; };
+		4FD325F72C933D1F006385EF /* HeaderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325F62C933D1F006385EF /* HeaderItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsListView.swift; sourceTree = "<group>"; };
 		4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsItemView.swift; sourceTree = "<group>"; };
 		4FD325F42C933C6B006385EF /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		4FD325F62C933D1F006385EF /* HeaderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD325F12C933A99006385EF /* ServiceLogsItemView.swift */,
+				4FD325F62C933D1F006385EF /* HeaderItemView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD325F22C933A99006385EF /* ServiceLogsItemView.swift in Sources */,
+				4FD325F72C933D1F006385EF /* HeaderItemView.swift in Sources */,
 				4FD325F52C933C6B006385EF /* HexColor.swift in Sources */,
 				4FD325C32C933575006385EF /* ServiceLogsApp.swift in Sources */,
 				4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */,
