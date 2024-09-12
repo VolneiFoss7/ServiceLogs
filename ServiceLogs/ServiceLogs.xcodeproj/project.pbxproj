@@ -13,6 +13,7 @@
 		4FD325D42C933577006385EF /* ServiceLogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325D32C933577006385EF /* ServiceLogsTests.swift */; };
 		4FD325DE2C933577006385EF /* ServiceLogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325DD2C933577006385EF /* ServiceLogsUITests.swift */; };
 		4FD325E02C933577006385EF /* ServiceLogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325DF2C933577006385EF /* ServiceLogsUITestsLaunchTests.swift */; };
+		4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4FD325D92C933577006385EF /* ServiceLogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceLogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD325DD2C933577006385EF /* ServiceLogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsUITests.swift; sourceTree = "<group>"; };
 		4FD325DF2C933577006385EF /* ServiceLogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLogsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		4FD325ED2C933995006385EF /* list */ = {
 			isa = PBXGroup;
 			children = (
+				4FD325EE2C933A35006385EF /* ServiceLogsListView.swift */,
 			);
 			path = list;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD325C32C933575006385EF /* ServiceLogsApp.swift in Sources */,
+				4FD325EF2C933A36006385EF /* ServiceLogsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
