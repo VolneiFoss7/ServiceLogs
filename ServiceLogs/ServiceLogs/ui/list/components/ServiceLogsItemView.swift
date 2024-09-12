@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct ServiceLogsItemView: View {
     
     let serviceLog: ServiceLog
+    let viewModel: ServiceLogsViewModel
     
     var body: some View {
         VStack {
@@ -20,7 +23,8 @@ struct ServiceLogsItemView: View {
                 categoryTitle: serviceLog.categoryTitle,
                 reportText: serviceLog.reportText,
                 userImage: serviceLog.userImage,
-                attachment: serviceLog.attachment 
+                attachment: serviceLog.attachment,
+                viewModel: viewModel  
             )
             
             FooterItemView(time: serviceLog.timeString)
@@ -28,22 +32,4 @@ struct ServiceLogsItemView: View {
         .padding([.top, .bottom], 16)
         .border(Color(hex: "#E6E6E6"), width: 1)
     }
-}
-
-#Preview {
-    ServiceLogsItemView(
-        serviceLog: ServiceLog(
-            userName: "John Snow",
-            userImage: .profile1,
-            residentName: "Jane Doe",
-            categoryTitle: "Maintenance",
-            reportText: "Report",
-            attachment: Attachment(
-                attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg"),
-                attachmentName: "water-pressure.jpg",
-                attachmentSize: "200KB"
-            ),
-            time: Date.now
-        )
-    )
 }
