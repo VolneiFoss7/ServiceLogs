@@ -13,6 +13,7 @@ struct BodyItemView: View {
     let categoryTitle: String
     let reportText: String
     let userImage: ImageResource
+    let attachment: Attachment
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -43,9 +44,21 @@ struct BodyItemView: View {
             Text(reportText)
                 .font(.system(size: 14))
                 .padding([.leading, .trailing], 16)
+            
+            if (attachment.attachment != nil ){
+                AttachmentView(
+                    attachmentName: attachment.attachmentName,
+                    attachmentSize: attachment.attachmentSize,
+                    downloadAttachment: {
+                        
+                    }
+                )
+                .padding(.leading, 16)
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
+    
 }
 
 #Preview {
@@ -53,5 +66,11 @@ struct BodyItemView: View {
         residentName: "John Snow",
         categoryTitle: "Maintenance",
         reportText: "The faucet is leaking.",
-        userImage: .profile1)
+        userImage: .profile1,
+        attachment: Attachment(
+            attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg"),
+            attachmentName: "water-pressure.jpg",
+            attachmentSize: "200KB"
+        )
+    )
 }
