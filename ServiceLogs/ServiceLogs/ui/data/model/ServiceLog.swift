@@ -13,6 +13,8 @@ struct ServiceLog {
     let residentName: String
     let categoryTitle: String
     let reportText: String
+    let attachment: Attachment
+    
     let time: Date
     
     var timeString: String {

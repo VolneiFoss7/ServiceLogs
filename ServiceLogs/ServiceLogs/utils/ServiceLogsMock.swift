@@ -13,6 +13,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Jane Smith",
                categoryTitle: "Maintenance",
                reportText: "The faucet is leaking.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "200KB"),
                time: Date()),
 
     ServiceLog(userName: "Alice Johnson",
@@ -20,6 +21,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Michael Brown",
                categoryTitle: "Electrical",
                reportText: "The lights are flickering.",
+               attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-3600)),
 
     ServiceLog(userName: "Robert Wilson",
@@ -27,6 +29,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Emma Davis",
                categoryTitle: "Plumbing",
                reportText: "The toilet is clogged.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "300KB"),
                time: Date().addingTimeInterval(-7200)),
 
     ServiceLog(userName: "James Miller",
@@ -34,6 +37,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Olivia Garcia",
                categoryTitle: "Cleaning",
                reportText: "Common area needs cleaning.",
+               attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-10800)),
 
     ServiceLog(userName: "William Martinez",
@@ -41,6 +45,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Ava Rodriguez",
                categoryTitle: "Maintenance",
                reportText: "Broken window in the living room.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "500KB"),
                time: Date().addingTimeInterval(-14400)),
 
     ServiceLog(userName: "Sophia Lee",
@@ -48,6 +53,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Lucas Martinez",
                categoryTitle: "Security",
                reportText: "The front door is not locking.",
+               attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-18000)),
 
     ServiceLog(userName: "Liam Anderson",
@@ -55,6 +61,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Mia Thomas",
                categoryTitle: "Electrical",
                reportText: "Power outage in the kitchen.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "150KB"),
                time: Date().addingTimeInterval(-21600)),
 
     ServiceLog(userName: "Elijah White",
@@ -62,6 +69,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Amelia Harris",
                categoryTitle: "Landscaping",
                reportText: "Garden needs maintenance.",
+               attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-25200)),
 
     ServiceLog(userName: "Noah Thompson",
@@ -69,6 +77,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Evelyn Clark",
                categoryTitle: "Maintenance",
                reportText: "Air conditioning is not working.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "450KB"),
                time: Date().addingTimeInterval(-28800)),
 
     ServiceLog(userName: "Isabella Lee",
@@ -76,6 +85,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Benjamin Lewis",
                categoryTitle: "Cleaning",
                reportText: "Trash needs to be taken out.",
+               attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-32400)),
 
     ServiceLog(userName: "Charlotte Walker",
@@ -83,6 +93,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Oliver Young",
                categoryTitle: "Plumbing",
                reportText: "The shower is leaking.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "350KB"),
                time: Date().addingTimeInterval(-36000)),
 
     ServiceLog(userName: "Amelia King",
@@ -90,6 +101,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Henry Hall",
                categoryTitle: "Maintenance",
                reportText: "The radiator is making noise.",
+               attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-39600)),
 
     ServiceLog(userName: "Evelyn Wright",
@@ -97,6 +109,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Ella Scott",
                categoryTitle: "Electrical",
                reportText: "Outlet is not working.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "100KB"),
                time: Date().addingTimeInterval(-43200)),
 
     ServiceLog(userName: "Harper Green",
@@ -104,6 +117,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "James Baker",
                categoryTitle: "Security",
                reportText: "CCTV needs repair.",
+               attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-46800)),
 
     ServiceLog(userName: "Avery Adams",
@@ -111,6 +125,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Lucas Nelson",
                categoryTitle: "Cleaning",
                reportText: "Windows need washing.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "250KB"),
                time: Date().addingTimeInterval(-50400)),
 
     ServiceLog(userName: "Scarlett Carter",
@@ -118,6 +133,7 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Grace Mitchell",
                categoryTitle: "Landscaping",
                reportText: "Weeds are growing in the garden.",
+               attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-54000)),
 
     ServiceLog(userName: "Ella Perez",
@@ -125,27 +141,4 @@ let mockServiceLogs: [ServiceLog] = [
                residentName: "Nathan Ramirez",
                categoryTitle: "Maintenance",
                reportText: "Garage door is stuck.",
-               time: Date().addingTimeInterval(-57600)),
-
-    ServiceLog(userName: "Luna Sanders",
-               userImage: .profile2,
-               residentName: "David Morris",
-               categoryTitle: "Plumbing",
-               reportText: "Leaking pipe under the sink.",
-               time: Date().addingTimeInterval(-61200)),
-
-    ServiceLog(userName: "Addison Bell",
-               userImage: .profile2,
-               residentName: "Chloe Rivera",
-               categoryTitle: "Electrical",
-               reportText: "Ceiling fan is not working.",
-               time: Date().addingTimeInterval(-64800)),
-
-    ServiceLog(userName: "Sofia Cooper",
-               userImage: .profile2,
-               residentName: "Ethan Reed",
-               categoryTitle: "Cleaning",
-               reportText: "Carpet needs shampooing.",
-               time: Date().addingTimeInterval(-68400))
-]
-
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "
