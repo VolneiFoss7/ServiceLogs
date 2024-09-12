@@ -14,6 +14,7 @@ struct BodyItemView: View {
     let reportText: String
     let userImage: ImageResource
     let attachment: Attachment
+    @ObservedObject var viewModel: ServiceLogsViewModel
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -45,12 +46,14 @@ struct BodyItemView: View {
                 .font(.system(size: 14))
                 .padding([.leading, .trailing], 16)
             
-            if (attachment.attachment != nil ){
+            if attachment.attachment != nil {
                 AttachmentView(
                     attachmentName: attachment.attachmentName,
                     attachmentSize: attachment.attachmentSize,
                     downloadAttachment: {
-                        
+                        if let urlString = attachment.attachment?.absoluteString {
+                            viewModel.downloadImage(from: urlString)
+                        }
                     }
                 )
                 .padding(.leading, 16)
@@ -58,19 +61,4 @@ struct BodyItemView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
-    
-}
-
-#Preview {
-    BodyItemView(
-        residentName: "John Snow",
-        categoryTitle: "Maintenance",
-        reportText: "The faucet is leaking.",
-        userImage: .profile1,
-        attachment: Attachment(
-            attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg"),
-            attachmentName: "water-pressure.jpg",
-            attachmentSize: "200KB"
-        )
-    )
 }
