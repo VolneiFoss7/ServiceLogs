@@ -136,9 +136,11 @@ let mockServiceLogs: [ServiceLog] = [
                attachment: Attachment(attachment: nil, attachmentName: "", attachmentSize: ""),
                time: Date().addingTimeInterval(-54000)),
 
-    ServiceLog(userName: "Ella Perez",
+    ServiceLog(userName: "Avery Adams",
                userImage: .profile2,
-               residentName: "Nathan Ramirez",
-               categoryTitle: "Maintenance",
-               reportText: "Garage door is stuck.",
-               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "
+               residentName: "Lucas Nelson",
+               categoryTitle: "Cleaning",
+               reportText: "Windows need washing.",
+               attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "250KB"),
+               time: Date().addingTimeInterval(-50400))
+    ]
