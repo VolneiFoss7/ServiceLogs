@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ServiceLogsItemView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HeaderItemView(userName: "John")
+        }
+        .padding([.top, .bottom], 16)
+        .border(Color(hex: "#E6E6E6"), width: 1)
     }
 }
+
 
 #Preview {
     ServiceLogsItemView()
