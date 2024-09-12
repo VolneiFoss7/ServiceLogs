@@ -12,7 +12,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile1,
                residentName: "Jane Smith",
                categoryTitle: "Maintenance",
-               reportText: "The faucet is leaking.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "200KB"),
                time: Date()),
 
@@ -28,7 +28,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile1,
                residentName: "Emma Davis",
                categoryTitle: "Plumbing",
-               reportText: "The toilet is clogged.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "300KB"),
                time: Date().addingTimeInterval(-7200)),
 
@@ -44,7 +44,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile1,
                residentName: "Ava Rodriguez",
                categoryTitle: "Maintenance",
-               reportText: "Broken window in the living room.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "500KB"),
                time: Date().addingTimeInterval(-14400)),
 
@@ -60,7 +60,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile1,
                residentName: "Mia Thomas",
                categoryTitle: "Electrical",
-               reportText: "Power outage in the kitchen.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "150KB"),
                time: Date().addingTimeInterval(-21600)),
 
@@ -76,7 +76,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile1,
                residentName: "Evelyn Clark",
                categoryTitle: "Maintenance",
-               reportText: "Air conditioning is not working.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "450KB"),
                time: Date().addingTimeInterval(-28800)),
 
@@ -92,7 +92,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile2,
                residentName: "Oliver Young",
                categoryTitle: "Plumbing",
-               reportText: "The shower is leaking.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "350KB"),
                time: Date().addingTimeInterval(-36000)),
 
@@ -108,7 +108,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile2,
                residentName: "Ella Scott",
                categoryTitle: "Electrical",
-               reportText: "Outlet is not working.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "100KB"),
                time: Date().addingTimeInterval(-43200)),
 
@@ -124,7 +124,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile2,
                residentName: "Lucas Nelson",
                categoryTitle: "Cleaning",
-               reportText: "Windows need washing.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "250KB"),
                time: Date().addingTimeInterval(-50400)),
 
@@ -140,7 +140,7 @@ let mockServiceLogs: [ServiceLog] = [
                userImage: .profile2,
                residentName: "Lucas Nelson",
                categoryTitle: "Cleaning",
-               reportText: "Windows need washing.",
+               reportText: "Rivera reported a missing package supposed to be delivered yesterday. Front desk is checking delivery logs and CCTV. Contact delivery service for confirmation and update Ms. Rivera by this evening.",
                attachment: Attachment(attachment: URL(string: "https://media.istockphoto.com/id/1081436086/photo/water-pressure-from-a-large-pipe-over-the-river.jpg?s=612x612&w=0&k=20&c=JoUu7W3og1KTi4O5pddUznkqkNd4kAtbTKop-ull09c="), attachmentName: "water-pressure.jpg", attachmentSize: "250KB"),
                time: Date().addingTimeInterval(-50400))
     ]
