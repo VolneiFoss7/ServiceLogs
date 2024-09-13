@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct ServiceLogsItemView: View {
     
     let serviceLog: ServiceLog
