@@ -31,6 +31,10 @@ class ServiceLogsViewModel: ObservableObject {
         }
     }
     
+    func removeLog(at index: Int) {
+        serviceLogs.remove(at: index)
+    }
+    
     func downloadImage(from urlString: String) {
         guard let url = URL(string: urlString) else { return }
         
@@ -47,7 +51,7 @@ class ServiceLogsViewModel: ObservableObject {
             
             DispatchQueue.main.async {
                 self.downloadedImage = downloadedImage
-                self.saveImageLocally(image: downloadedImage) 
+                self.saveImageLocally(image: downloadedImage)
             }
         }
         task.resume()

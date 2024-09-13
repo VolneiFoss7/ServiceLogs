@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct HeaderItemView: View {
+    @ObservedObject var viewModel: ServiceLogsViewModel
     let userName: String
+    let index: Int
 
     var body: some View {
         HStack {
@@ -35,7 +37,7 @@ struct HeaderItemView: View {
                 }
                 
                 Button(action: {
-                    
+                    viewModel.removeLog(at: index)
                 }) {
                     Label("Delete", systemImage: "trash")
                 }
@@ -47,8 +49,4 @@ struct HeaderItemView: View {
         }
         .frame(maxWidth: .infinity)
     }
-}
-
-#Preview {
-    HeaderItemView(userName: "John")
 }

@@ -11,10 +11,11 @@ struct ServiceLogsItemView: View {
     
     let serviceLog: ServiceLog
     let viewModel: ServiceLogsViewModel
+    let index: Int
     
     var body: some View {
         VStack {
-            HeaderItemView(userName: serviceLog.userName)
+            HeaderItemView(viewModel: viewModel, userName: serviceLog.userName, index: index)
             
             BodyItemView(
                 residentName: serviceLog.residentName,

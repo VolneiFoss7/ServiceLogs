@@ -30,7 +30,7 @@ struct ServiceLogsListView: View {
                 ScrollView {
                     LazyVStack(spacing: 0) {
                         ForEach(viewModel.serviceLogs.indices, id: \.self) { index in
-                            ServiceLogsItemView(serviceLog: viewModel.serviceLogs[index], viewModel: viewModel) 
+                            ServiceLogsItemView(serviceLog: viewModel.serviceLogs[index], viewModel: viewModel, index: index)
                                 .onAppear {
                                     if index == viewModel.serviceLogs.count - 1 && viewModel.hasMoreLogs {
                                         viewModel.loadMoreLogs()
