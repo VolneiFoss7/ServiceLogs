@@ -34,9 +34,11 @@ class ServiceLogsViewModel: ObservableObject {
     }
     
     func refreshLogs() {
-        currentPage = 1
-        serviceLogs = []
-        loadMoreLogs()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            self.currentPage = 1
+            self.serviceLogs = []
+            self.loadMoreLogs()
+        }
     }
     
     
