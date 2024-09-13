@@ -11,6 +11,7 @@ import Combine
 
 class ServiceLogsViewModel: ObservableObject {
     @Published var serviceLogs: [ServiceLog] = []
+    private var originalServiceLogs: [ServiceLog] = mockServiceLogs
     @Published var currentPage = 1
     private let itemsPerPage = 10
     private let allLogs = mockServiceLogs
@@ -24,12 +25,20 @@ class ServiceLogsViewModel: ObservableObject {
     func loadMoreLogs() {
         let startIndex = (currentPage - 1) * itemsPerPage
         let endIndex = min(startIndex + itemsPerPage, allLogs.count)
+        
         if startIndex < endIndex {
             let newLogs = Array(allLogs[startIndex..<endIndex])
             serviceLogs.append(contentsOf: newLogs)
             currentPage += 1
         }
     }
+    
+    func refreshLogs() {
+        currentPage = 1
+        serviceLogs = []
+        loadMoreLogs()
+    }
+    
     
     func removeLog(at index: Int) {
         serviceLogs.remove(at: index)

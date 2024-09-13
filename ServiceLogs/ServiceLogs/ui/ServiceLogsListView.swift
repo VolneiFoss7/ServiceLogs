@@ -39,6 +39,9 @@ struct ServiceLogsListView: View {
                         }
                     }
                 }
+                .refreshable {
+                    viewModel.refreshLogs()
+                }
             }
             .navigationBarTitleDisplayMode(.inline)
         }
